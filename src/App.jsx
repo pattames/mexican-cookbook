@@ -4,11 +4,16 @@ import Landing from "./components/Landing";
 import Recipe from "./components/Recipe";
 import Error from "./components/Error";
 import Category from "./components/Category";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import CategorySection from "./components/CategorySection";
 
 function App() {
   return (
     <>
-      <h1>Mexican CookBook</h1>
+      <Navbar />
+      <HeroSection />
+      <CategorySection />
       <Routes>
         {/* Landing Page */}
         <Route path="/" element={<Landing />} />

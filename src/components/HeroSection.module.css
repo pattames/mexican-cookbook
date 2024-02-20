@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.leftside {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding-top: 15rem;
+  padding-right: 11rem;
+}
+
+.horizontal_line {
+  margin-top: 5rem;
+  width: 157px;
+  background-color: black;
+  height: 5px;
+  border: solid black;
+  border-radius: 10px;
+}
+
+.heading {
+  padding-top: 4rem;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.button_hero {
+  margin-top: 2rem;
+  width: 180px;
+  height: 45px;
+  color: white;
+  background-color: #163020;
+  font-size: 2rem;
+}
+
+.button_hero:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 5px #888888;
+}
+
+.green_rectangle {
+  width: 580px;
+  height: 811px;
+  background-color: #b6c4b6;
+  align-self: flex-end;
+  margin-left: 220px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.image_hero_up {
+  width: 280px;
+  height: 280px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.image_hero {
+  width: 200px;
+  background-color: black;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#pic1 {
+  position: absolute;
+  left: -30%;
+  top: 5%;
+  background-color: pink;
+}
+
+#pic2 {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  background-color: black;
+}
+
+#pic3 {
+  position: absolute;
+  width: 340px;
+  height: 260px;
+  left: -35%;
+  top: 45%;
+}
+
+#pic4 {
+  position: absolute;
+  width: 295px;
+  height: 340px;
+  left: 44%;
+  top: 55%;
+}

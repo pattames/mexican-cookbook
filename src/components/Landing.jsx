@@ -4,11 +4,14 @@
 //Browse by Recipe (Patricio)
 //Subscription (Ibrahim)
 //Footer (Ibrahim)
+import HeroSection from "./HeroSection";
+import CategorySection from "./CategorySection";
 
 export default function Landing() {
   return (
     <>
-      <h1>Landing page</h1>
+      <HeroSection />
+      <CategorySection />
     </>
   );
 }

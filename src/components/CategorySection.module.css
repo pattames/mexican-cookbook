@@ -13,13 +13,13 @@
 }
 
 #category2 {
-  background-image: url("/public/Tacos.svg");
+  background-image: url("/Tacos.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #category1 {
-  background-image: url("/public/Nachos\ Icon.svg");
+  background-image: url("/Icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

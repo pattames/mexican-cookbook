@@ -14,9 +14,9 @@ function App() {
         {/* Landing Page */}
         <Route path="/" element={<Landing />} />
         {/* Category page */}
-        <Route path="/category" element={<Category />} />
+        <Route path="category" element={<Category />} />
         {/* Recipe Page */}
-        <Route path="/category/:id" element={<Recipe />} />
+        <Route path="category/:id" element={<Recipe />} />
         {/* Error page */}
         <Route path="*" element={<Error />} />
       </Routes>

@@ -11,16 +11,13 @@ import CategorySection from "./components/CategorySection";
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <CategorySection />
       <Routes>
         {/* Landing Page */}
         <Route path="/" element={<Landing />} />
         {/* Category page */}
-        <Route path="/category" element={<Category />} />
+        <Route path="category" element={<Category />} />
         {/* Recipe Page */}
-        <Route path="/recipe/:id" element={<Recipe />} />
+        <Route path="recipe/:id" element={<Recipe />} />
         {/* Error page */}
         <Route path="*" element={<Error />} />
       </Routes>

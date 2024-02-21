@@ -14,7 +14,7 @@
 }
 
 div > ul {
-  margin-left: 50px;
+  margin-left: 5rem;
   display: flex;
   gap: 20px;
   text-decoration: none;

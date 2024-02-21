@@ -11,12 +11,16 @@ function HeroSection() {
         </h1>
         <button className={styles.button_hero}>Let's cook!</button>
       </div>
-
-      <div className={styles.green_rectangle}>
-        <div className={styles.image_hero_up} id={styles.pic1}></div>
-        <div className={styles.image_hero_up} id={styles.pic2}></div>
-        <div className={styles.image_hero} id={styles.pic3}></div>
-        <div className={styles.image_hero} id={styles.pic4}></div>
+      <div className={styles.rightside}>
+        <div className={styles.green_rectangle}>
+          <div
+            className={`${styles.image_hero_up} ${styles.slideInLeft}`}
+            id={styles.pic1}
+          ></div>
+          <div className={styles.image_hero_up} id={styles.pic2}></div>
+          <div className={styles.image_hero} id={styles.pic3}></div>
+          <div className={styles.image_hero} id={styles.pic4}></div>
+        </div>
       </div>
     </div>
   );

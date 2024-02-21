@@ -25,7 +25,17 @@
 }
 
 .line {
-  width: 300px;
+  width: 15rem;
   height: 2px;
   background-color: black;
+}
+
+#category2:hover .category,
+#category1:hover .category {
+  transform: scale(2); /* Makes the category square slightly smaller on hover */
+}
+
+#category2:hover,
+#category1:hover {
+  height: 300px; /* Increases the height of the line on hover */
 }

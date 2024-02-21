@@ -12,7 +12,7 @@ export default function CategorySection() {
 
         <a href="">
           <div className={styles.category} id={styles.category2}></div>
-          <div className={styles.line}> Platos Principales</div>
+          <div className={styles.line}> Platillos Principales</div>
         </a>
       </div>
     </>

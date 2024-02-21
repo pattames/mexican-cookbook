@@ -11,6 +11,7 @@
   width: 50%;
   padding-top: 15rem;
   padding-right: 11rem;
+  animation: slideInLeft 1s ease forwards;
 }
 
 .rightside {
@@ -69,6 +70,7 @@
   position: absolute;
   left: -20%;
   top: 5%;
+  animation: slideInTop 1s ease forwards;
 }
 
 #pic2 {
@@ -81,6 +83,7 @@
   left: 40%;
   top: 15%;
   background-color: black;
+  animation: slideInRight 1s ease forwards;
 }
 
 #pic3 {
@@ -93,6 +96,7 @@
   background-color: black;
   left: -35%;
   top: 55%;
+  animation: slideInBottom 1s ease forwards;
 }
 
 #pic4 {
@@ -105,18 +109,41 @@
   height: 34rem;
   left: 50%;
   top: 55%;
+  animation: slideInLeft 1s ease forwards;
 }
 
-@keyframes slideInLeft {
+@keyframes slideInTop {
   from {
-    transform: translateX(-100px);
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
   }
   to {
     transform: translateX(0);
   }
 }
 
-.slideInLeft {
-  animation-name: slideInLeft;
-  animation-timing-function: ease-in;
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

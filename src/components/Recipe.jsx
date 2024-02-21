@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Navbar from "./Navbar";
 import styles from "./Recipe.module.css";
 
 export default function Recipe() {
@@ -18,7 +17,6 @@ export default function Recipe() {
   }
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
         <div className={styles.hero_recipe}></div>
         <div className={styles.container_recipe}>

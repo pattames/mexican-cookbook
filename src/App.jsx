@@ -5,6 +5,7 @@ import Recipe from "./components/Recipe";
 import Error from "./components/Error";
 import Category from "./components/Category";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         {/* Error page */}
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

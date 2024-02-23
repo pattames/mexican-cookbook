@@ -1,0 +1,46 @@
+.container {
+    background-color: #B6C4B6;
+    margin-top: 30px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subMessage {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.logo {
+    margin-right: 30px;
+}
+.logo > img {
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .message {
+    width: 40%;
+  }
+  .message > h3 {
+    font-size: x-large;
+  }
+
+  .subForm {
+    background-color: #eef0e5;
+  }
+    input[type="email" i] {
+    height: 50px;
+    width: 200px;
+    border-radius: 10%;
+    font-weight: 700;
+}
+    button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10%;
+    font-size: medium;
+    font-weight: 700;
+    color: #eef0e5;
+    background-color: #163020;
+  }

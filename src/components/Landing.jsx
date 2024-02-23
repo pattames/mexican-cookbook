@@ -6,12 +6,14 @@
 //Footer (Ibrahim)
 import HeroSection from "./HeroSection";
 import CategorySection from "./CategorySection";
+import Subscriptions from "./Subscriptions";
 
 export default function Landing() {
   return (
     <>
       <HeroSection />
       <CategorySection />
+      <Subscriptions/>
     </>
   );
 }

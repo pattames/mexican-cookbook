@@ -5,7 +5,7 @@ export default function Footer(){
 <div className={styles.container}>
     <div className={styles.footerCotent} >
         <div className={styles.logo} >
-            <img src="./public/logo.png" alt="logo" />
+            <img src="./logo.png" alt="logo" />
         </div>
         <div className={styles.navLinks}>
             <a href="">About Us || </a>
@@ -20,8 +20,8 @@ export default function Footer(){
             <h2>Browse Categories</h2>
             </div> 
             <div className={styles.browseCategoriesImg}>
-                <a href=""><img src="./public/Footer Nachos Icon.svg" alt="" />Platos</a>
-                <a href=""><img src="./public/Footer Tacos.svg" alt="" />Principales</a>
+                <a href=""><img src="./Footer Nachos Icon.svg" alt="" />Platos</a>
+                <a href=""><img src="./Footer Tacos.svg" alt="" />Principales</a>
             </div>
         </div>
         <div className={styles.followUs} >

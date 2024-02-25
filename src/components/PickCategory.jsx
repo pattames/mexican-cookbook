@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BotanaCard from "./BotanaCard";
 import styles from "./PickCategory.module.css";
 import PlatillosCard from "./PlatillosCard";
@@ -17,6 +17,11 @@ export default function PickCategory() {
     setShowPlatillos(true);
     setShowBotanas(false);
   }
+
+  //Render "botanas" when mounting
+  useEffect(() => {
+    setShowBotanas(true);
+  }, []);
 
   return (
     <div className={styles.pick_cat_container}>

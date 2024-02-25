@@ -1,0 +1,56 @@
+.pick_cat_container {
+  h2 {
+    font-size: 4rem;
+    font-family: "Literata", serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 2rem;
+  }
+  .buttons {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    border-top: solid 0.5rem #4c4b16;
+    border-bottom: solid 0.5rem #4c4b16;
+    max-width: 90%;
+    padding: 2rem;
+    margin: 0 auto;
+    gap: 7rem;
+    .button1 {
+      width: 8.9rem;
+      height: 2.5rem;
+      background: #304d30;
+      color: white;
+      border: none;
+      padding: 0;
+      font: inherit;
+      outline: inherit;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+    .button1:active {
+      background-color: red;
+    }
+    .button2 {
+      width: 19.9rem;
+      height: 2.5rem;
+      background: #304d30;
+      color: white;
+      border: none;
+      padding: 0;
+      font: inherit;
+      outline: inherit;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+  }
+  .card_container {
+    display: flex;
+    row-gap: 6rem;
+    justify-content: space-around;
+    padding: 10rem 0;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,41 @@
+.card {
+  background-color: aqua;
+  width: 29.5rem;
+  height: 39rem;
+  border-radius: 1rem;
+  .img_container {
+    height: 60%;
+    border-radius: inherit;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem 1rem 0rem 0rem;
+    }
+  }
+  .card_data {
+    height: 40%;
+    background-color: #b6c4b6;
+    border-radius: 0 0 1rem 1rem;
+    padding: 0 2rem;
+    font-family: "Literata", serif;
+    h3 {
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+    .middle_line {
+      height: 0.2rem;
+      width: 8rem;
+      background-color: #4c4b16;
+    }
+    .about_container {
+      display: flex;
+      margin: 1rem;
+      gap: 2rem;
+      p {
+        font-size: 1.2rem;
+        gap: 1rem;
+      }
+    }
+  }
+}

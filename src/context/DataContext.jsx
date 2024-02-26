@@ -6,8 +6,8 @@ export const DataContext = createContext();
 
 export default function DataContextProvider(props) {
   const client = createClient({
-    space: "lwwf0cid7sw8",
-    accessToken: "cL9_mKEg6c404st4M1HOIjuWmo0tsQDmylIfTNIPf2A",
+    space: import.meta.env.VITE_SPACE,
+    accessToken: import.meta.env.VITE_TOKEN,
   });
 
   const [data, setData] = useState([]);
@@ -15,9 +15,8 @@ export default function DataContextProvider(props) {
     const getData = async () => {
       try {
         const entryItems = await client.getEntries();
-        console.log("FETCH:", entryItems.items);
         setData(entryItems.items);
-      } catch (eror) {
+      } catch (error) {
         console.log(error);
       }
     };

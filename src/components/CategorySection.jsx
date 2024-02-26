@@ -5,12 +5,12 @@ export default function CategorySection() {
     <>
       <h2> Browse by Recipes</h2>
       <div className={styles.categoryContainer}>
-        <a href="">
+        <a href="/category">
           <div className={styles.category} id={styles.category1}></div>
           <div className={styles.line}>Botanas </div>
         </a>
 
-        <a href="">
+        <a href="/category">
           <div className={styles.category} id={styles.category2}></div>
           <div className={styles.line}> Platillos Principales</div>
         </a>

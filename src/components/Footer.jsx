@@ -20,11 +20,11 @@ export default function Footer() {
             <h2>Browse Categories</h2>
           </div>
           <div className={styles.browseCategoriesImg}>
-            <a href="">
+            <a href="/category">
               <img src="./Footer Nachos Icon.svg" alt="" />
               Platos
             </a>
-            <a href="">
+            <a href="/category">
               <img src="./Footer Tacos.svg" alt="" />
               Principales
             </a>

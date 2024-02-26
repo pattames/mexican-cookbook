@@ -1,0 +1,16 @@
+.main_container {
+  background-color: #163020;
+  padding: 5%;
+  h2 {
+    font-size: 4rem;
+    color: white;
+    text-align: left;
+    font-family: "Literata", serif;
+    font-weight: 400;
+    padding-bottom: 4%;
+  }
+  .card_container {
+    display: flex;
+    gap: 4rem;
+  }
+}

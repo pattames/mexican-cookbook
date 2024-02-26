@@ -8,7 +8,6 @@
 }
 
 .navItem {
-  border: 1px orange solid;
   font-size: 2rem;
   display: inline-block;
 }
@@ -17,11 +16,11 @@ div > ul {
   margin-left: 5rem;
   display: flex;
   gap: 20px;
-  text-decoration: none;
 }
 
 .navlinks {
   color: white;
+  text-decoration: none;
 }
 
 .navlinks:hover {

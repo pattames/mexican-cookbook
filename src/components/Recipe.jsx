@@ -48,7 +48,7 @@ export default function Recipe() {
     overflow: "hidden",
     display: "fixed",
     height: "70rem",
-    width: "100%",
+    margin: "0",
   };
   return (
     <>

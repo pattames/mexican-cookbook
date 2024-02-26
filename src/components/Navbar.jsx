@@ -13,7 +13,7 @@ export default function Navbar() {
           </div>
           <div className={styles.navItem}>
             <a href="/category" className={styles.navlinks}>
-              RECIPES
+              CATEGORIES
             </a>
           </div>
           <div className={styles.navItem}>

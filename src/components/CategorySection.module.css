@@ -1,8 +1,44 @@
+@keyframes a-1-transform {
+  0% {
+    transform: none;
+    animation-timing-function: ease;
+  }
+
+  100% {
+    transform: scale3d(0.9, 0.9, 1);
+  }
+}
+
+@keyframes line-grow {
+  0% {
+    width: 15rem;
+  }
+
+  100% {
+    width: 25rem;
+  }
+}
+
 .categoryContainer {
   display: flex;
   gap: 20px;
   justify-content: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+}
+
+.categoryWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryWrapper:hover {
+  animation: 0.3s linear 0s 1 both a-1-transform;
+}
+
+.categoryWrapper:hover .line {
+  animation: 0.3s linear 0s 1 both line-grow;
 }
 
 .category {
@@ -12,6 +48,12 @@
   border-radius: 10px;
 }
 
+.heading {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
 #category2 {
   background-image: url("/Tacos.svg");
   background-repeat: no-repeat;
@@ -19,7 +61,7 @@
 }
 
 #category1 {
-  background-image: url("/Icon.svg");
+  background-image: url("/Nachos_Icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -27,15 +69,19 @@
 .line {
   width: 15rem;
   height: 2px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   background-color: black;
 }
 
-#category2:hover .category,
-#category1:hover .category {
-  transform: scale(2); /* Makes the category square slightly smaller on hover */
+.name {
+  text-align: center;
+  font-size: 2.5rem;
 }
 
-#category2:hover,
-#category1:hover {
-  height: 300px; /* Increases the height of the line on hover */
+.link {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #163020;
 }

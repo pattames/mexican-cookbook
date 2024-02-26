@@ -74,8 +74,7 @@ export default function Recipe() {
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt perferendis deserunt iste molestiae modi repellendus
-                cumque aut officiis dolorem! Itaque dolores minus voluptatibus
-                saepe cum, quod commodi nobis labore odio.
+                cumque aut officiis dolorem!
               </p>
               <div className={styles.left_recipe_categories}>
                 <button

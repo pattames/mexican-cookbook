@@ -102,6 +102,8 @@
   font-size: 1.7rem;
   line-height: 2.4rem;
   padding: 1rem;
+  width: 100%;
+  text-align: left;
 }
 .left_recipe_categories {
   display: flex;

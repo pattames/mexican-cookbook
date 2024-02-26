@@ -15,7 +15,7 @@
     max-width: 90%;
     padding: 2rem;
     margin: 0 auto;
-    gap: 7rem;
+    gap: 4rem;
     .button1 {
       width: 8.9rem;
       height: 2.5rem;
@@ -42,6 +42,9 @@
       outline: inherit;
       border-radius: 1rem;
       cursor: pointer;
+    }
+    .button2:active {
+      background-color: red;
     }
   }
   .card_container {

@@ -13,7 +13,7 @@
   align-items: center;
   gap: 4rem;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
 }
 .left_recipe {
   position: absolute;
@@ -46,13 +46,13 @@
 }
 @media only screen and (min-width: 600px) {
   .left_recipe {
-    left: 30%;
+    left: 28%;
     width: 45rem;
     padding: 0.5rem;
     padding: 2rem;
   }
   .right_recipe {
-    left: 55%;
+    left: 58%;
     width: 5rem;
     padding: 0;
   }

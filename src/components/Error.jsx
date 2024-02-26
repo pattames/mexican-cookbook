@@ -1,7 +1,10 @@
-export default function Error() {
+export default function Error({ message }) {
+  if (!message) {
+    message = "Error";
+  }
   return (
     <>
-      <h3>Error</h3>
+      <h1>{message}</h1>
     </>
   );
 }

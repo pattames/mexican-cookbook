@@ -26,6 +26,12 @@ export default function Recipe() {
   const [ingredients, setIngredients] = useState(true);
   const [preparation, setPreparation] = useState(false);
   const iconItems = ["stockpot", "person", "update", "finance"];
+  const aboutOptions = [
+    "Preparation:",
+    "Cooking time:",
+    "Portions:",
+    "Difficulty:",
+  ];
 
   function handledPreparation() {
     if (preparation) return;
@@ -110,7 +116,7 @@ export default function Recipe() {
                     data?.fields.instructions?.map((item, index) => {
                       return (
                         <li key={index}>
-                          <span class="material-symbols-outlined">
+                          <span className="material-symbols-outlined">
                             arrow_forward
                           </span>{" "}
                           {item}
@@ -129,7 +135,8 @@ export default function Recipe() {
                       <li key={index}>
                         <span className="material-symbols-outlined">
                           {iconItems[index]}
-                        </span>
+                        </span>{" "}
+                        {aboutOptions[index]}
                         {item}
                       </li>
                     );

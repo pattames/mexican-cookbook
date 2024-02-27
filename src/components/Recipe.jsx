@@ -3,6 +3,7 @@ import styles from "./Recipe.module.css";
 import { createClient } from "contentful";
 import { useParams } from "react-router-dom";
 import Error from "./Error";
+import BrowseByCard from "./BrowseByCard";
 
 export default function Recipe() {
   const { id } = useParams();
@@ -55,6 +56,9 @@ export default function Recipe() {
     display: "fixed",
     height: "70rem",
     margin: "0",
+  };
+  const BrowseByStyle = {
+    backgroundColor: "#86AD86",
   };
   return (
     <>
@@ -145,6 +149,7 @@ export default function Recipe() {
           </div>
         )}
       </div>
+      <BrowseByCard style={BrowseByStyle} />
     </>
   );
 }

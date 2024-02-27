@@ -1,4 +1,5 @@
 import styles from "./HeroSection.module.css";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -9,7 +10,9 @@ function HeroSection() {
           Come find out all our delicious recipes, save your money & cook at
           home
         </h1>
-        <button className={styles.button_hero}>Let's cook!</button>
+        <Link to="/category">
+          <button className={styles.button_hero}>Let's cook!</button>
+        </Link>
       </div>
       <div className={styles.rightside}>
         <div className={styles.green_rectangle}>

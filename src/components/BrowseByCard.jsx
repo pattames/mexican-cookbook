@@ -4,7 +4,7 @@ import BotanaCard from "./BotanaCard";
 import PlatillosCard from "./PlatillosCard";
 import styles from "./BrowseByCard.module.css";
 
-export default function BrowseByCard() {
+export default function BrowseByCard({ style }) {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -30,21 +30,21 @@ export default function BrowseByCard() {
   };
 
   return (
-    <div className={styles.main_container}>
+    <div className={styles.main_container} style={style}>
       <h2>Browse our Recipes</h2>
       <Carousel responsive={responsive} draggable={false}>
         <div className={styles.card_container}>
           <BotanaCard />
           <PlatillosCard />
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className={styles.filler}></div>
+        <div className={styles.filler}></div>
+        <div className={styles.filler}></div>
+        <div className={styles.filler}></div>
+        <div className={styles.filler}></div>
+        <div className={styles.filler}></div>
+        <div className={styles.filler}></div>
+        <div className={styles.filler}></div>
       </Carousel>
     </div>
   );

@@ -18,6 +18,11 @@ export default function BotanaCard() {
   );
   console.log("Only botanas:", botanasRecipes);
 
+  //Scrolls up to the top (The carousel was screwing that up)
+  function ScrollToTopOnRender() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {botanasRecipes &&
@@ -26,7 +31,11 @@ export default function BotanaCard() {
             to={`/category/${botanaRecipe.sys.id}`}
             style={{ textDecoration: "none" }}
           >
-            <div key={botanaRecipe.sys.id} className={styles.card}>
+            <div
+              key={botanaRecipe.sys.id}
+              className={styles.card}
+              onClick={ScrollToTopOnRender}
+            >
               <div className={styles.img_container}>
                 <img
                   src={botanaRecipe.fields.photo.map(

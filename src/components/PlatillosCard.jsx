@@ -18,6 +18,11 @@ export default function PlatillosCard() {
   );
   console.log("Only platillos:", platillosRecipes);
 
+  //Scrolls up to the top (The carousel was screwing that up)
+  function ScrollToTopOnRender() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {platillosRecipes &&
@@ -25,6 +30,7 @@ export default function PlatillosCard() {
           <Link
             to={`/category/${platilloRecipe.sys.id}`}
             style={{ textDecoration: "none" }}
+            onClick={ScrollToTopOnRender}
           >
             <div key={platilloRecipe.sys.id} className={styles.card}>
               <div className={styles.img_container}>

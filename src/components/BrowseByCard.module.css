@@ -13,4 +13,8 @@
     display: flex;
     gap: 4rem;
   }
+  /* .filler {
+    height: 1px;
+    background-color: aqua;
+  } */
 }

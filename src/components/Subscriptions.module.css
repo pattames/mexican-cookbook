@@ -30,15 +30,16 @@
   background-color: #eef0e5;
 }
 input[type="email" i] {
-  height: 50px;
-  width: 200px;
-  border-radius: 10%;
+  height: 5rem;
+  padding: 1rem 1rem;
+  width: 30rem;
+  border-radius: 1rem;
   font-weight: 700;
 }
 button {
-  width: 100px;
-  height: 50px;
-  border-radius: 10%;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
   font-size: medium;
   font-weight: 700;
   color: #eef0e5;

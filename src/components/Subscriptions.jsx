@@ -20,7 +20,7 @@ export default function Subscriptions() {
 
       <div className="styles.subForm">
         <input type="email" placeholder="  Please Enter your email..." />
-        <button>Subscribe</button>
+        <button className={styles.subscribe_button}>Subscribe</button>
       </div>
     </div>
   );

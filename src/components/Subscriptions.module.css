@@ -12,8 +12,10 @@
   width: 50%;
 }
 .logo {
-  margin-right: 30px;
+  width: auto;
+  height: 110px;
 }
+
 .logo > img {
   width: 100px;
   height: 70px;
@@ -23,7 +25,7 @@
   width: 40%;
 }
 .message > h3 {
-  font-size: x-large;
+  font-size: medium;
 }
 
 .subForm {
@@ -43,4 +45,8 @@ button {
   font-weight: 700;
   color: #eef0e5;
   background-color: #163020;
+}
+
+.textSub {
+  font-size: medium;
 }

@@ -5,7 +5,7 @@ export default function Footer() {
     <div className={styles.container}>
       <div className={styles.footerCotent}>
         <div className={styles.logo}>
-          <img src="/logo.png" alt="logo" />
+          <img src="/logo2.png" alt="logo" />
         </div>
         <div className={styles.navLinks}>
           <a href="">About Us || </a>

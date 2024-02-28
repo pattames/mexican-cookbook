@@ -26,26 +26,26 @@
   background-size: cover;
 }
 
-h2 {
+.subheading {
   font-size: 2rem;
   color: #163020;
 }
 
-h1 {
+.heading {
   font-size: 3rem;
   color: #163020;
   width: 40rem;
   text-align: center;
 }
 
-p {
+.text {
   font-size: 1.5rem;
   width: 30rem;
   text-align: center;
   color: #163020;
 }
 
-button {
+.btn {
   height: 4.5rem;
   width: 18rem;
   border-radius: 10px;

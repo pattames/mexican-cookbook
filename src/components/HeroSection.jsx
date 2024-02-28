@@ -7,8 +7,8 @@ function HeroSection() {
       <div className={styles.leftside}>
         <div className={styles.horizontal_line}></div>
         <h1 className={styles.heading}>
-          Come find out all our delicious recipes, save your money & cook at
-          home
+          Come find out all our delicious mexican recipes, save your money &
+          cook at home
         </h1>
         <Link to="/category">
           <button className={styles.button_hero}>Let's cook!</button>

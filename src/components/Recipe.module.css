@@ -137,6 +137,7 @@
   border: none;
   width: 20rem;
   color: #fff;
+  border-radius: 10px;
 }
 .left_recipe_btn_active {
   padding: 1rem 4rem;
@@ -144,6 +145,7 @@
   border: none;
   color: #fff;
   background: #304d30;
+  border-radius: 10px;
 }
 .left_recipe_btn:hover {
   background: #304d30;

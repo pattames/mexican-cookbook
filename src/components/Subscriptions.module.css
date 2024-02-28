@@ -38,8 +38,8 @@ input[type="email" i] {
   border-radius: 1rem;
   font-weight: 700;
 }
-button {
-  width: 5rem;
+.subscribe_button {
+  width: 11rem;
   height: 5rem;
   border-radius: 1rem;
   font-size: medium;

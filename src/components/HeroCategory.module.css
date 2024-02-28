@@ -46,6 +46,8 @@
 }
 
 .btn {
+  background-color: #163020;
+  color: white;
   height: 4.5rem;
   width: 18rem;
   border-radius: 10px;

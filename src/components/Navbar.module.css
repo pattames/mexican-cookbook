@@ -1,7 +1,7 @@
 .navbar {
   background-color: #163020;
   display: flex;
-  height: 60px;
+  height: 5rem;
   align-items: center;
   width: 100%;
   padding-left: 5rem;
@@ -12,7 +12,7 @@
   display: inline-block;
 }
 
-div > ul {
+.navlist {
   margin-left: 5rem;
   display: flex;
   gap: 20px;
@@ -25,4 +25,10 @@ div > ul {
 
 .navlinks:hover {
   color: #b6c4b6;
+}
+
+.navbarlogo {
+  margin-left: 241px;
+  width: 120px;
+  height: 100px;
 }

@@ -14,7 +14,7 @@ export default function BotanaCard() {
   console.log("DATA in BotanaCard:", recipes);
 
   const botanasRecipes = recipes.filter((recipe) =>
-    recipe.fields.category.includes("Botanas")
+    recipe.category.includes("Botanas")
   );
   console.log("Only botanas:", botanasRecipes);
 
@@ -28,37 +28,32 @@ export default function BotanaCard() {
       {botanasRecipes &&
         botanasRecipes.map((botanaRecipe) => (
           <Link
-            to={`/category/${botanaRecipe.sys.id}`}
+            to={`/category/${botanaRecipe.id}`}
             style={{ textDecoration: "none" }}
           >
             <div
-              key={botanaRecipe.sys.id}
+              key={botanaRecipe.id}
               className={styles.card}
               onClick={ScrollToTopOnRender}
             >
               <div className={styles.img_container}>
-                <img
-                  src={botanaRecipe.fields.photo.map(
-                    (photo) => photo.fields.file.url
-                  )}
-                  alt={botanaRecipe.fields.title}
-                />
+                <img src={botanaRecipe.photo} alt={botanaRecipe.title} />
               </div>
               <div className={styles.card_data}>
-                <h3>{botanaRecipe.fields.title}</h3>
+                <h3>{botanaRecipe.title}</h3>
                 <div className={styles.middle_line}></div>
                 <div className={styles.about_container}>
                   <p>
                     <FontAwesomeIcon icon={faClock} size="2x" />
-                    {botanaRecipe.fields.about[0]}
+                    {botanaRecipe.about[0]}
                   </p>
                   <p>
                     <FontAwesomeIcon icon={faBowlRice} size="2x" />
-                    {botanaRecipe.fields.about[2]}
+                    {botanaRecipe.about[2]}
                   </p>
                   <p>
                     <FontAwesomeIcon icon={faChartSimple} size="2x" />
-                    {botanaRecipe.fields.about[3]}
+                    {botanaRecipe.about[3]}
                   </p>
                 </div>
               </div>

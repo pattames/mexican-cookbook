@@ -1,25 +1,18 @@
 import { useState, useEffect } from "react";
 import styles from "./Recipe.module.css";
-import { createClient } from "contentful";
 import { useParams } from "react-router-dom";
 import Error from "./Error";
 import BrowseByCard from "./BrowseByCard";
 
 export default function Recipe() {
   const { id } = useParams();
-  const client = createClient({
-    space: import.meta.env.VITE_SPACE,
-    accessToken: import.meta.env.VITE_TOKEN,
-  });
   const [data, setData] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      try {
-        const item = await client.getEntry(id);
-        setData(item);
-      } catch (error) {
-        console.log(error);
-      }
+      const res = await fetch(`http://localhost:8080/API/recipes/${id}`);
+      const data = await res.json();
+      console.log("recipe", data);
+      setData(data[0]);
     };
     getData();
   }, [id]);
@@ -44,9 +37,7 @@ export default function Recipe() {
     setIngredients(!ingredients);
     setPreparation(!preparation);
   }
-  const imageUrl = data.fields
-    ? `url(http:${data.fields.photo[0].fields.file.url})`
-    : "url(/image22.png)";
+  const imageUrl = data.photo ? `url(${data.photo})` : "url(/image22.png)";
   const heroStyle = {
     backgroundImage: imageUrl,
     backgroundSize: "cover",
@@ -64,17 +55,17 @@ export default function Recipe() {
     <>
       <div className={styles.container}>
         <div style={heroStyle}></div>
-        {!data.fields && (
+        {!data && (
           <div className={styles.container_recipe}>
             <div className={styles.left_recipe}>
               <Error message={"the data not be found!"} />
             </div>
           </div>
         )}
-        {data.fields && (
+        {data.id && (
           <div className={styles.container_recipe}>
             <div className={styles.left_recipe}>
-              <h2>{data?.fields?.title}</h2>
+              <h2>{data.title}</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt perferendis deserunt iste molestiae modi repellendus
@@ -105,7 +96,7 @@ export default function Recipe() {
               <div className={styles.left_recipe_desc}>
                 <ul>
                   {ingredients &&
-                    data?.fields?.ingredients?.map((item, index) => {
+                    data.ingredients?.map((item, index) => {
                       return (
                         <li key={index}>
                           <span className="material-symbols-outlined">
@@ -116,7 +107,7 @@ export default function Recipe() {
                       );
                     })}
                   {preparation &&
-                    data?.fields.instructions?.map((item, index) => {
+                    data.instructions?.map((item, index) => {
                       return (
                         <li key={index}>
                           <span className="material-symbols-outlined">
@@ -133,7 +124,7 @@ export default function Recipe() {
               <h3>About the recipe</h3>
               <ul>
                 {data &&
-                  data?.fields?.about?.map((item, index) => {
+                  data.about?.map((item, index) => {
                     return (
                       <li key={index}>
                         <span className="material-symbols-outlined">
